@@ -1,7 +1,8 @@
 #include<stdio.h>
 #include<math.h>
 
-int main(){
+int main()
+{
 
     int i, num;
     double invertido1, resultado1=0;
@@ -10,18 +11,20 @@ int main(){
     printf("Digite um numero inteiro: ");
     scanf("%d", &num);
 
-    invertido1 = 1.0/num;
-    for (i=0; i <729; i++){
+    invertido1 = 1.0f/num;
+    for (i=0; i <729; i++)
+    {
         resultado1= resultado1+invertido1;
     }
-    printf("\nresultado double e: %lf\n\n", resultado1);
+    printf("\nresultado double e: %.15g\n\n", resultado1);
 
     invertido2 = 1.0f/num;
-    for (i=0; i <729; i++){
+    for (i=0; i <729; i++)
+    {
         resultado2= resultado2+invertido2;
     }
-    printf("resultado float e: %lf\n", resultado2);
+    printf("resultado float e: %.15g\n", resultado2);
 
-return 0;
+    return 0;
 }
 
