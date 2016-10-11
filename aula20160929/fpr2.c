@@ -23,8 +23,5 @@ void soletras(char *frase, int tamanho, char *nova_frase) {
 	nova_frase[j] = '\0';
 }
 
-    Contact GitHub API Training Shop Blog About
-
-    © 2016 GitHub, Inc. Terms Privacy Security Status Help
 
 
