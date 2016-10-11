@@ -1,7 +1,6 @@
 #include <stdio.h>
 
-int divisao(int dividendo, int divisor,
-		int *quociente, int *resto);
+int divisao(int dividendo, int divisor, int *quociente, int *resto);
 
 int main() {
 	int dividendo, divisor;
@@ -17,12 +16,13 @@ int main() {
 	return 0;
 }
 
-int divisao(int dividendo, int divisor,
-		int *quociente, int *resto) {
-	if(divisor != 0) {
+int divisao(int dividendo, int divisor, int *quociente, int *resto) {
+	if(divisor != 0)
+    {
 		*quociente = dividendo / divisor;
 		*resto = dividendo % divisor;
 		return 1;
-	} else return 0;
+	}
+	else return 0;
 }
 
